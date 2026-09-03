@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="View your Veloura Cafe reservation history."
+    >
+
+    <title>Veloura Cafe | Reservation History</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/reservation-history.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header
+        class="history-header"
+        id="historyHeader"
+    >
+
+        <nav class="navbar">
+
+
+            <a
+                href="index.html"
+                class="brand-area"
+            >
+
+                <div class="brand-diamond">
+                    <span>V</span>
+                </div>
+
+                <div>
+
+                    <div class="brand-name">
+                        VELOURA
+                    </div>
+
+                    <div class="brand-subtitle">
+                        CAFÉ · AL AIN
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    HOME
+                </a>
+
+                <a href="story.html">
+                    STORY
+                </a>
+
+                <a href="gallery.html">
+                    GALLERY
+                </a>
+
+                <a href="reservation.html">
+                    RESERVATION
+                </a>
+
+                <a href="menu.html">
+                    MENU
+                </a>
+
+            </div>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="reservation.html"
+                    class="reserve-button"
+                >
+                    RESERVE
+                    <span>↗</span>
+                </a>
+
+                <a
+                    href="order-history.html"
+                    class="history-button"
+                >
+                    ORDERS
+                </a>
+
+                <a
+                    href="menu.html"
+                    class="bag-button"
+                >
+                    ♧
+                </a>
+
+            </div>
+
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="history-hero">
+
+            <div class="hero-grid"></div>
+
+            <div class="hero-glow hero-glow-one"></div>
+
+            <div class="hero-glow hero-glow-two"></div>
+
+            <div class="hero-ring hero-ring-one"></div>
+
+            <div class="hero-ring hero-ring-two"></div>
+
+
+            <div class="history-shell hero-content">
+
+                <p class="hero-kicker reveal">
+                    VELOURA RESERVATIONS
+                </p>
+
+                <h1 class="reveal">
+
+                    Your Reservation
+                    <br>
+                    History
+
+                </h1>
+
+                <p class="hero-description reveal">
+
+                    Revisit your previous Veloura table reservations
+                    and easily reserve your favourite experience again.
+
+                </p>
+
+                <a
+                    href="reservation.html"
+                    class="hero-button reveal"
+                >
+
+                    <span>
+                        NEW RESERVATION
+                    </span>
+
+                    <span class="hero-arrow">
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CUSTOMER SUMMARY
+        ================================================== -->
+
+        <section class="summary-section">
+
+            <div class="history-shell">
+
+                <div class="summary-card reveal">
+
+
+                    <div class="customer-area">
+
+                        <div class="customer-avatar">
+                            <span id="customerInitial">
+                                V
+                            </span>
+                        </div>
+
+                        <div>
+
+                            <p>
+                                WELCOME BACK
+                            </p>
+
+                            <h2 id="customerName">
+                                Veloura Guest
+                            </h2>
+
+                            <span id="customerEmail">
+                                Your reservation journey
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="reservation-stats">
+
+                        <div class="stat-box">
+
+                            <span>
+                                TOTAL RESERVATIONS
+                            </span>
+
+                            <strong id="totalReservations">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="stat-box">
+
+                            <span>
+                                UPCOMING
+                            </span>
+
+                            <strong id="upcomingReservations">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="stat-box">
+
+                            <span>
+                                LAST BOOKING
+                            </span>
+
+                            <strong
+                                class="stat-date"
+                                id="lastReservationDate"
+                            >
+                                —
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RESERVATION LIST
+        ================================================== -->
+
+        <section class="reservations-section">
+
+            <div class="history-shell">
+
+
+                <div class="section-heading reveal">
+
+
+                    <div>
+
+                        <p>
+                            YOUR TABLES
+                        </p>
+
+                        <h2>
+                            Previous Reservations
+                        </h2>
+
+                    </div>
+
+
+                    <div class="history-controls">
+
+                        <div class="search-box">
+
+                            <span>
+                                ⌕
+                            </span>
+
+                            <input
+                                type="text"
+                                id="reservationSearch"
+                                placeholder="Search reservation..."
+                            >
+
+                        </div>
+
+
+                        <select id="reservationFilter">
+
+                            <option value="all">
+                                All Reservations
+                            </option>
+
+                            <option value="upcoming">
+                                Upcoming
+                            </option>
+
+                            <option value="completed">
+                                Completed
+                            </option>
+
+                            <option value="cancelled">
+                                Cancelled
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div
+                    class="reservation-list"
+                    id="reservationList"
+                ></div>
+
+
+
+                <!-- EMPTY SEARCH -->
+
+                <div
+                    class="no-results"
+                    id="noResults"
+                >
+
+                    <div class="empty-icon">
+                        ⌕
+                    </div>
+
+                    <h3>
+                        No matching reservations.
+                    </h3>
+
+                    <p>
+                        Try another reservation number,
+                        date or status.
+                    </p>
+
+                </div>
+
+
+
+                <!-- EMPTY HISTORY -->
+
+                <div
+                    class="empty-history"
+                    id="emptyHistory"
+                >
+
+                    <div class="empty-logo">
+                        <span>V</span>
+                    </div>
+
+                    <p class="empty-kicker">
+                        YOUR TABLE AWAITS
+                    </p>
+
+                    <h2>
+                        No reservations yet.
+                    </h2>
+
+                    <p class="empty-description">
+
+                        Once you reserve a table at Veloura,
+                        your reservation details will appear here.
+
+                    </p>
+
+                    <a
+                        href="reservation.html"
+                        class="empty-button"
+                    >
+
+                        <span>
+                            RESERVE A TABLE
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         RESERVATION DETAILS
+    ====================================================== -->
+
+    <div
+        class="reservation-modal"
+        id="reservationModal"
+    >
+
+        <div
+            class="modal-backdrop"
+            id="reservationBackdrop"
+        ></div>
+
+
+        <div class="reservation-detail-card">
+
+
+            <button
+                type="button"
+                class="modal-close"
+                id="reservationClose"
+            >
+                ×
+            </button>
+
+
+            <div class="detail-header">
+
+
+                <div class="detail-logo">
+                    V
+                </div>
+
+
+                <div>
+
+                    <p>
+                        VELOURA RESERVATION
+                    </p>
+
+                    <h2 id="detailReservationNumber">
+                        VR-2026-0000
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="status-row">
+
+                <span>
+                    RESERVATION STATUS
+                </span>
+
+                <strong id="detailStatus">
+                    Confirmed
+                </strong>
+
+            </div>
+
+
+
+            <div class="reservation-info-grid">
+
+
+                <div class="info-card">
+
+                    <span>
+                        DATE
+                    </span>
+
+                    <strong id="detailDate">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span>
+                        TIME
+                    </span>
+
+                    <strong id="detailTime">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span>
+                        GUESTS
+                    </span>
+
+                    <strong id="detailGuests">
+                        2 Guests
+                    </strong>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span>
+                        OCCASION
+                    </span>
+
+                    <strong id="detailOccasion">
+                        —
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="guest-section">
+
+                <p>
+                    GUEST DETAILS
+                </p>
+
+
+                <div class="guest-grid">
+
+
+                    <div>
+
+                        <span>
+                            NAME
+                        </span>
+
+                        <strong id="detailName">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            PHONE
+                        </span>
+
+                        <strong id="detailPhone">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            EMAIL
+                        </span>
+
+                        <strong id="detailEmail">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                class="request-section"
+                id="requestSection"
+            >
+
+                <span>
+                    SPECIAL REQUEST
+                </span>
+
+                <p id="detailRequest">
+                    —
+                </p>
+
+            </div>
+
+
+
+            <div class="restaurant-location">
+
+                <div class="location-icon">
+                    V
+                </div>
+
+                <div>
+
+                    <span>
+                        YOUR TABLE
+                    </span>
+
+                    <strong>
+                        Veloura Café · Al Ain
+                    </strong>
+
+                    <p>
+                        Al Ain · United Arab Emirates
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="detail-actions">
+
+                <button
+                    type="button"
+                    class="book-again-button"
+                    id="detailBookAgain"
+                >
+
+                    <span>
+                        BOOK AGAIN
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="detail-close-button"
+                    id="detailCloseButton"
+                >
+                    CLOSE
+                </button>
+
+            </div>
+
+
+            <p class="detail-footer-text">
+                WHERE EVERY CUP TELLS A STORY
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         BOOK AGAIN CONFIRMATION
+    ====================================================== -->
+
+    <div
+        class="book-again-modal"
+        id="bookAgainModal"
+    >
+
+        <div
+            class="book-again-backdrop"
+            id="bookAgainBackdrop"
+        ></div>
+
+
+        <div class="book-again-card">
+
+            <div class="book-again-icon">
+                ↻
+            </div>
+
+            <p>
+                RESERVE AGAIN
+            </p>
+
+            <h2>
+                Return to your
+                <br>
+                Veloura table?
+            </h2>
+
+            <span class="book-again-text">
+
+                We will take you to the reservation page
+                with your previous guest details ready.
+
+            </span>
+
+
+            <div class="previous-reservation">
+
+                <small>
+                    PREVIOUS RESERVATION
+                </small>
+
+                <strong id="bookAgainNumber">
+                    VR-2026-0000
+                </strong>
+
+            </div>
+
+
+            <div class="book-again-actions">
+
+                <button
+                    type="button"
+                    id="cancelBookAgain"
+                >
+                    CANCEL
+                </button>
+
+                <button
+                    type="button"
+                    id="confirmBookAgain"
+                >
+                    CONTINUE
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div
+        class="history-toast"
+        id="historyToast"
+    >
+
+        <div class="toast-icon">
+            ✓
+        </div>
+
+        <div>
+
+            <strong id="toastTitle">
+                Reservation selected
+            </strong>
+
+            <span id="toastText">
+                Continue to reservation.
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="history-footer">
+
+        <div class="footer-main">
+
+            <div>
+
+                <h2>
+                    VELOURA
+                </h2>
+
+                <p>
+                    WHERE EVERY CUP TELLS A STORY
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="story.html">
+                    Story
+                </a>
+
+                <a href="gallery.html">
+                    Gallery
+                </a>
+
+                <a href="reservation.html">
+                    Reservation
+                </a>
+
+                <a href="menu.html">
+                    Menu
+                </a>
+
+                <a href="order-history.html">
+                    Orders
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                AL AIN · UAE
+            </span>
+
+            <span>
+                © 2026 VELOURA CAFE
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/reservation-history.js"></script>
+
+
+</body>
+
+</html>

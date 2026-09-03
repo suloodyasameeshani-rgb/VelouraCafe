@@ -1,0 +1,1829 @@
+/* =========================================================
+   VELOURA INTRO
+   PREMIUM 3D ONBOARDING EXPERIENCE
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html,
+body {
+
+    width: 100%;
+
+    min-height: 100%;
+
+}
+
+
+body {
+
+    overflow: hidden;
+
+    background:
+        #090807;
+
+    color:
+        #f3eee7;
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+}
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --bg:
+        #090807;
+
+    --bg-soft:
+        #12100d;
+
+    --cream:
+        #f3eee7;
+
+    --cream-soft:
+        #d1c9be;
+
+    --muted:
+        #8e877f;
+
+    --gold:
+        #c59a60;
+
+    --gold-light:
+        #ddb77b;
+
+    --gold-deep:
+        #70532e;
+
+    --border:
+        rgba(221, 183, 123, 0.18);
+
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.intro-page {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 32%,
+            rgba(113, 79, 39, 0.18),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            180deg,
+            #12100d 0%,
+            #0c0b09 55%,
+            #080706 100%
+        );
+
+    isolation: isolate;
+
+}
+
+
+/* =========================================================
+   AMBIENT BACKGROUND
+========================================================= */
+
+.ambient {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter:
+        blur(110px);
+
+    pointer-events: none;
+
+}
+
+
+.ambient-one {
+
+    width: 500px;
+
+    height: 500px;
+
+    left: -230px;
+
+    top: -280px;
+
+    background:
+        rgba(198, 154, 94, 0.14);
+
+}
+
+
+.ambient-two {
+
+    width: 500px;
+
+    height: 500px;
+
+    right: -250px;
+
+    bottom: -320px;
+
+    background:
+        rgba(124, 78, 36, 0.11);
+
+}
+
+
+.ambient-three {
+
+    width: 280px;
+
+    height: 280px;
+
+    left: 50%;
+
+    top: 45%;
+
+    transform:
+        translate(-50%, -50%);
+
+    background:
+        rgba(221, 183, 123, 0.08);
+
+    animation:
+        ambientPulse
+        5s
+        ease-in-out
+        infinite;
+
+}
+
+
+.grain {
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0.04;
+
+    pointer-events: none;
+
+    background-image:
+
+        repeating-linear-gradient(
+            45deg,
+            rgba(255,255,255,0.03) 0px,
+            rgba(255,255,255,0.03) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.intro-header {
+
+    position: relative;
+
+    z-index: 20;
+
+    width: 100%;
+
+    height: 95px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.brand-lockup {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 4px;
+
+}
+
+
+.brand-symbol {
+
+    position: relative;
+
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border:
+        1px solid
+        rgba(221, 183, 123, 0.52);
+
+    border-radius: 50%;
+
+    color:
+        var(--gold-light);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 0 22px
+        rgba(221, 183, 123, 0.07);
+
+    animation:
+        logoGlow
+        3s
+        ease-in-out
+        infinite;
+
+}
+
+
+.brand-symbol::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 5px;
+
+    border:
+        1px solid
+        rgba(221, 183, 123, 0.11);
+
+    border-radius: 50%;
+
+}
+
+
+.brand-word {
+
+    color:
+        var(--cream);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    letter-spacing: 5px;
+
+}
+
+
+/* =========================================================
+   MAIN SHELL
+========================================================= */
+
+.intro-shell {
+
+    position: relative;
+
+    z-index: 10;
+
+    width:
+        min(
+            430px,
+            calc(100% - 40px)
+        );
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding-bottom: 26px;
+
+}
+
+
+/* =========================================================
+   PRODUCT WINDOW
+========================================================= */
+
+.product-window {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 420px;
+
+    overflow: hidden;
+
+    border-radius: 54px;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 42%,
+            rgba(222, 184, 120, 0.15),
+            transparent 44%
+        ),
+
+        linear-gradient(
+            145deg,
+            #2a2117,
+            #17130f
+        );
+
+    border:
+        1px solid
+        var(--border);
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(255,255,255,0.045),
+
+        inset 0 -35px 50px
+        rgba(0,0,0,0.18),
+
+        0 40px 90px
+        rgba(0,0,0,0.48);
+
+    perspective:
+        1400px;
+
+    transform-style:
+        preserve-3d;
+
+    cursor:
+        grab;
+
+    transition:
+        transform 0.18s ease-out,
+        box-shadow 0.35s ease;
+
+}
+
+
+.product-window:hover {
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(255,255,255,0.055),
+
+        inset 0 -35px 50px
+        rgba(0,0,0,0.18),
+
+        0 48px 100px
+        rgba(0,0,0,0.52);
+
+}
+
+
+.product-window:active {
+
+    cursor:
+        grabbing;
+
+}
+
+
+/* =========================================================
+   DEPTH RINGS
+========================================================= */
+
+.depth-ring {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    pointer-events: none;
+
+    border-radius: 50%;
+
+    transform-style:
+        preserve-3d;
+
+}
+
+
+.depth-ring-one {
+
+    width: 310px;
+
+    height: 310px;
+
+    border:
+        1px solid
+        rgba(221, 183, 123, 0.08);
+
+    transform:
+        translate(-50%, -50%)
+        rotateX(68deg)
+        rotateZ(10deg)
+        translateZ(-30px);
+
+    animation:
+        ringRotateOne
+        14s linear
+        infinite;
+
+}
+
+
+.depth-ring-two {
+
+    width: 240px;
+
+    height: 240px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.035);
+
+    transform:
+        translate(-50%, -50%)
+        rotateY(62deg)
+        rotateZ(-20deg)
+        translateZ(-60px);
+
+    animation:
+        ringRotateTwo
+        16s linear
+        infinite;
+
+}
+
+
+/* =========================================================
+   TRACK
+========================================================= */
+
+.slides-track {
+
+    width: 300%;
+
+    height: 100%;
+
+    display: flex;
+
+    transform-style:
+        preserve-3d;
+
+    transition:
+
+        transform
+        0.82s
+        cubic-bezier(
+            0.22,
+            1,
+            0.36,
+            1
+        );
+
+}
+
+
+/* =========================================================
+   SLIDE
+========================================================= */
+
+.product-slide {
+
+    position: relative;
+
+    width:
+        33.333333%;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transform-style:
+        preserve-3d;
+
+}
+
+
+.slide-glow {
+
+    position: absolute;
+
+    width: 280px;
+
+    height: 280px;
+
+    border-radius: 50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(220, 181, 117, 0.22),
+            rgba(220, 181, 117, 0.05) 46%,
+            transparent 72%
+        );
+
+    animation:
+        glowPulse
+        4s ease-in-out
+        infinite;
+
+}
+
+
+/* =========================================================
+   PRODUCT DEPTH LAYER
+========================================================= */
+
+.product-depth-layer {
+
+    position: relative;
+
+    z-index: 4;
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transform-style:
+        preserve-3d;
+
+    transition:
+        transform 0.25s ease-out;
+
+}
+
+
+/* =========================================================
+   PRODUCT IMAGE
+========================================================= */
+
+.product-image {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 75%;
+
+    height: 77%;
+
+    object-fit: contain;
+
+    user-select: none;
+
+    pointer-events: none;
+
+    transform:
+        translateZ(72px);
+
+    filter:
+
+        drop-shadow(
+            0 38px 30px
+            rgba(0,0,0,0.52)
+        );
+
+    animation:
+        productFloat
+        4s ease-in-out
+        infinite;
+
+}
+
+
+/* =========================================================
+   PANEL SHINE
+========================================================= */
+
+.panel-shine {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 8;
+
+    pointer-events: none;
+
+    background:
+
+        linear-gradient(
+            115deg,
+            transparent 20%,
+            rgba(255,255,255,0.045) 42%,
+            transparent 60%
+        );
+
+    transform:
+        translateX(-130%);
+
+    animation:
+        shinePass
+        6s ease-in-out
+        infinite;
+
+}
+
+
+/* =========================================================
+   EDGE LIGHT
+========================================================= */
+
+.panel-edge-light {
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: inherit;
+
+    pointer-events: none;
+
+    box-shadow:
+
+        inset 14px 0 25px
+        rgba(221, 183, 123, 0.025),
+
+        inset -14px 0 25px
+        rgba(221, 183, 123, 0.018);
+
+}
+
+
+/* =========================================================
+   DOTS
+========================================================= */
+
+.slider-dots {
+
+    height: 35px;
+
+    margin-top: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+}
+
+
+.slider-dot {
+
+    position: relative;
+
+    width: 7px;
+
+    height: 7px;
+
+    padding: 0;
+
+    border: 0;
+
+    border-radius: 100px;
+
+    background:
+        rgba(244, 239, 230, 0.28);
+
+    cursor: pointer;
+
+    transition:
+        width 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease,
+        transform 0.35s ease;
+
+}
+
+
+.slider-dot:hover {
+
+    transform:
+        scale(1.2);
+
+}
+
+
+.slider-dot.active {
+
+    width: 28px;
+
+    background:
+        var(--gold-light);
+
+    box-shadow:
+        0 0 12px
+        rgba(221, 183, 123, 0.34);
+
+}
+
+
+/* =========================================================
+   COPY
+========================================================= */
+
+.intro-copy {
+
+    width: 100%;
+
+    margin-top: 3px;
+
+    text-align: center;
+
+    transition:
+        opacity 0.28s ease,
+        transform 0.28s ease,
+        filter 0.28s ease;
+
+}
+
+
+.intro-copy.changing {
+
+    opacity: 0;
+
+    transform:
+        translateY(10px)
+        scale(0.985);
+
+    filter:
+        blur(2px);
+
+}
+
+
+.intro-kicker {
+
+    margin-bottom: 9px;
+
+    color:
+        var(--gold-light);
+
+    font-size: 7px;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+}
+
+
+.intro-copy h1 {
+
+    color:
+        var(--cream);
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 44px;
+
+    font-weight: 600;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.6px;
+
+}
+
+
+.intro-description {
+
+    max-width: 330px;
+
+    margin:
+        13px auto 0;
+
+    color:
+        var(--muted);
+
+    font-size: 11px;
+
+    line-height: 1.65;
+
+}
+
+
+/* =========================================================
+   GET STARTED BUTTON
+========================================================= */
+
+.get-started-button {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 60px;
+
+    margin-top: 22px;
+
+    padding:
+        0 9px
+        0 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(221, 183, 123, 0.18);
+
+    border-radius:
+        100px;
+
+    background:
+        #050505;
+
+    color:
+        var(--cream);
+
+    cursor:
+        pointer;
+
+    box-shadow:
+        0 18px 42px
+        rgba(0,0,0,0.28);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease,
+        opacity 0.35s ease;
+
+}
+
+
+/* LOCKED STATE */
+
+.get-started-button.locked {
+
+    cursor:
+        not-allowed;
+
+    opacity:
+        0.62;
+
+    border-color:
+        rgba(255,255,255,0.08);
+
+}
+
+
+.get-started-button.locked
+.button-icon {
+
+    background:
+        #39342e;
+
+    color:
+        #797168;
+
+}
+
+
+.get-started-button.locked:hover {
+
+    transform:
+        none;
+
+    background:
+        #050505;
+
+    box-shadow:
+        0 18px 42px
+        rgba(0,0,0,0.28);
+
+}
+
+
+/* UNLOCKED */
+
+.get-started-button.unlocked {
+
+    opacity: 1;
+
+    border-color:
+        rgba(221, 183, 123, 0.42);
+
+    box-shadow:
+
+        0 18px 42px
+        rgba(0,0,0,0.30),
+
+        0 0 30px
+        rgba(221, 183, 123, 0.07);
+
+    animation:
+        unlockedPulse
+        2.2s ease-in-out
+        infinite;
+
+}
+
+
+.get-started-button.unlocked::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -100%;
+
+    width: 60%;
+
+    height: 100%;
+
+    transform:
+        skewX(-22deg);
+
+    background:
+
+        linear-gradient(
+            110deg,
+            transparent,
+            rgba(255,255,255,0.14),
+            transparent
+        );
+
+    animation:
+        buttonShine
+        3.5s ease-in-out
+        infinite;
+
+}
+
+
+.get-started-button.unlocked:hover {
+
+    transform:
+        translateY(-3px);
+
+    background:
+        #0c0b0a;
+
+    box-shadow:
+
+        0 24px 55px
+        rgba(0,0,0,0.40),
+
+        0 0 36px
+        rgba(221, 183, 123, 0.10);
+
+}
+
+
+.button-lock {
+
+    width: 22px;
+
+    color:
+        var(--gold-light);
+
+    font-size: 10px;
+
+    opacity: 0.65;
+
+}
+
+
+.button-label {
+
+    margin-left: auto;
+
+    padding-left: 18px;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+}
+
+
+.button-icon {
+
+    width: 43px;
+
+    height: 43px;
+
+    margin-left: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        var(--gold-light);
+
+    color:
+        #11100d;
+
+    font-size: 18px;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+
+}
+
+
+.get-started-button.unlocked:hover
+.button-icon {
+
+    transform:
+        translateX(3px)
+        rotate(-4deg);
+
+}
+
+
+/* =========================================================
+   PROGRESS NOTE
+========================================================= */
+
+.progress-note {
+
+    margin-top: 10px;
+
+    color:
+        #716a62;
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+
+    text-align: center;
+
+    transition:
+        color 0.35s ease,
+        opacity 0.35s ease;
+
+}
+
+
+.progress-note.ready {
+
+    color:
+        var(--gold-light);
+
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.bottom-meta {
+
+    position: absolute;
+
+    bottom: 14px;
+
+    display: flex;
+
+    gap: 18px;
+
+    color:
+        #57514b;
+
+    font-size: 6px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================================
+   PAGE TRANSITION
+========================================================= */
+
+.page-transition {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        #080807;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transform:
+        translateY(100%);
+
+    transition:
+
+        transform
+        0.8s
+        cubic-bezier(
+            0.76,
+            0,
+            0.24,
+            1
+        ),
+
+        opacity
+        0.1s ease;
+
+}
+
+
+.page-transition.active {
+
+    opacity: 1;
+
+    pointer-events: auto;
+
+    transform:
+        translateY(0);
+
+}
+
+
+.transition-ring {
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    border:
+        1px solid
+        rgba(221,183,123,0.16);
+
+    border-radius: 50%;
+
+    opacity: 0;
+
+    transform:
+        scale(0.6);
+
+}
+
+
+.page-transition.active
+.transition-ring {
+
+    animation:
+        transitionRing
+        1.2s ease-out
+        forwards;
+
+}
+
+
+.transition-brand {
+
+    position: relative;
+
+    z-index: 2;
+
+    color:
+        var(--cream);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 42px;
+
+    font-weight: 600;
+
+    letter-spacing: 10px;
+
+    opacity: 0;
+
+    transform:
+        translateY(16px);
+
+    transition:
+        0.45s ease 0.35s;
+
+}
+
+
+.transition-subtitle {
+
+    margin-top: 12px;
+
+    color:
+        var(--gold-light);
+
+    font-size: 7px;
+
+    letter-spacing: 3px;
+
+    opacity: 0;
+
+    transform:
+        translateY(10px);
+
+    transition:
+        0.45s ease 0.52s;
+
+}
+
+
+.page-transition.active
+.transition-brand,
+.page-transition.active
+.transition-subtitle {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes productFloat {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0)
+            translateZ(72px)
+            rotateZ(-0.5deg);
+
+    }
+
+
+    50% {
+
+        transform:
+            translateY(-14px)
+            translateZ(88px)
+            rotateZ(0.7deg);
+
+    }
+
+}
+
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+
+        transform:
+            scale(0.94);
+
+        opacity: 0.64;
+
+    }
+
+
+    50% {
+
+        transform:
+            scale(1.10);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+@keyframes shinePass {
+
+    0%,
+    72% {
+
+        transform:
+            translateX(-130%);
+
+    }
+
+
+    100% {
+
+        transform:
+            translateX(130%);
+
+    }
+
+}
+
+
+@keyframes ambientPulse {
+
+    0%,
+    100% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(0.9);
+
+        opacity: 0.6;
+
+    }
+
+
+    50% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(1.15);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+@keyframes logoGlow {
+
+    0%,
+    100% {
+
+        box-shadow:
+            0 0 20px
+            rgba(221,183,123,0.05);
+
+    }
+
+
+    50% {
+
+        box-shadow:
+            0 0 30px
+            rgba(221,183,123,0.12);
+
+    }
+
+}
+
+
+@keyframes ringRotateOne {
+
+    from {
+
+        transform:
+            translate(-50%, -50%)
+            rotateX(68deg)
+            rotateZ(0deg)
+            translateZ(-30px);
+
+    }
+
+
+    to {
+
+        transform:
+            translate(-50%, -50%)
+            rotateX(68deg)
+            rotateZ(360deg)
+            translateZ(-30px);
+
+    }
+
+}
+
+
+@keyframes ringRotateTwo {
+
+    from {
+
+        transform:
+            translate(-50%, -50%)
+            rotateY(62deg)
+            rotateZ(0deg)
+            translateZ(-60px);
+
+    }
+
+
+    to {
+
+        transform:
+            translate(-50%, -50%)
+            rotateY(62deg)
+            rotateZ(-360deg)
+            translateZ(-60px);
+
+    }
+
+}
+
+
+@keyframes unlockedPulse {
+
+    0%,
+    100% {
+
+        box-shadow:
+
+            0 18px 42px
+            rgba(0,0,0,0.30),
+
+            0 0 18px
+            rgba(221,183,123,0.04);
+
+    }
+
+
+    50% {
+
+        box-shadow:
+
+            0 22px 48px
+            rgba(0,0,0,0.34),
+
+            0 0 34px
+            rgba(221,183,123,0.10);
+
+    }
+
+}
+
+
+@keyframes buttonShine {
+
+    0%,
+    60% {
+
+        left: -100%;
+
+    }
+
+
+    100% {
+
+        left: 150%;
+
+    }
+
+}
+
+
+@keyframes transitionRing {
+
+    0% {
+
+        opacity: 0;
+
+        transform:
+            scale(0.6);
+
+    }
+
+
+    40% {
+
+        opacity: 1;
+
+    }
+
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            scale(1.65);
+
+    }
+
+}
+
+
+/* =========================================================
+   SHORT SCREENS
+========================================================= */
+
+@media (max-height: 780px) {
+
+
+    .intro-header {
+
+        height: 74px;
+
+    }
+
+
+    .product-window {
+
+        height: 325px;
+
+        border-radius: 44px;
+
+    }
+
+
+    .intro-copy h1 {
+
+        font-size: 36px;
+
+    }
+
+
+    .intro-description {
+
+        margin-top: 8px;
+
+    }
+
+
+    .get-started-button {
+
+        height: 54px;
+
+        margin-top: 14px;
+
+    }
+
+
+    .button-icon {
+
+        width: 39px;
+
+        height: 39px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+
+    .intro-page {
+
+        min-height:
+            100svh;
+
+    }
+
+
+    .intro-header {
+
+        height: 86px;
+
+    }
+
+
+    .intro-shell {
+
+        width:
+            calc(100% - 42px);
+
+        padding-bottom: 22px;
+
+    }
+
+
+    .product-window {
+
+        height:
+            min(
+                46vh,
+                405px
+            );
+
+        min-height: 315px;
+
+        border-radius: 48px;
+
+    }
+
+
+    .product-image {
+
+        width: 77%;
+
+        height: 77%;
+
+    }
+
+
+    .depth-ring-one {
+
+        width: 250px;
+
+        height: 250px;
+
+    }
+
+
+    .depth-ring-two {
+
+        width: 190px;
+
+        height: 190px;
+
+    }
+
+
+    .intro-copy h1 {
+
+        font-size:
+            clamp(
+                37px,
+                11vw,
+                45px
+            );
+
+    }
+
+
+    .intro-description {
+
+        font-size: 10px;
+
+    }
+
+
+    .button-label {
+
+        font-size: 8px;
+
+        letter-spacing: 1.5px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 370px) {
+
+
+    .intro-shell {
+
+        width:
+            calc(100% - 30px);
+
+    }
+
+
+    .product-window {
+
+        min-height: 285px;
+
+        border-radius: 40px;
+
+    }
+
+
+    .intro-copy h1 {
+
+        font-size: 35px;
+
+    }
+
+
+    .get-started-button {
+
+        height: 54px;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+
+    * {
+
+        animation-duration:
+            0.01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            0.01ms !important;
+
+    }
+
+}

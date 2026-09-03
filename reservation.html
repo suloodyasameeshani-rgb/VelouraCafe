@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Reserve a table at Veloura Cafe in Al Ain, UAE."
+    >
+
+    <title>Veloura Cafe | Reservation</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/reservation.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header
+        class="reservation-header"
+        id="reservationHeader"
+    >
+
+        <nav class="navbar">
+
+
+            <!-- BRAND -->
+
+            <a
+                href="index.html"
+                class="brand-area"
+            >
+
+                <div class="brand-diamond">
+
+                    <span>
+                        V
+                    </span>
+
+                </div>
+
+
+                <div class="brand-copy">
+
+                    <div class="brand-name">
+                        VELOURA
+                    </div>
+
+                    <div class="brand-subtitle">
+                        CAFÉ · AL AIN
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- NAVIGATION -->
+
+            <div class="nav-links">
+
+
+                <a href="index.html">
+
+                    <span class="nav-dot"></span>
+
+                    HOME
+
+                </a>
+
+
+                <a href="story.html">
+
+                    <span class="nav-dot"></span>
+
+                    STORY
+
+                </a>
+
+
+                <a href="gallery.html">
+
+                    <span class="nav-dot"></span>
+
+                    GALLERY
+
+                </a>
+
+
+                <a
+                    href="reservation.html"
+                    class="active"
+                >
+
+                    <span class="nav-dot"></span>
+
+                    RESERVATION
+
+                </a>
+
+
+                <a href="menu.html">
+
+                    <span class="nav-dot"></span>
+
+                    MENU
+
+                </a>
+
+
+            </div>
+
+
+
+            <!-- RIGHT NAV -->
+
+            <div class="nav-actions">
+
+
+                <!-- CUSTOMER ACCOUNT -->
+
+                <div
+                    class="customer-account"
+                    id="customerAccount"
+                >
+
+
+                    <button
+                        class="sign-button"
+                        id="customerAccountButton"
+                        type="button"
+                        aria-expanded="false"
+                    >
+
+                        <span id="customerAccountName">
+                            SIGN IN
+                        </span>
+
+                        <span
+                            class="customer-arrow"
+                            id="customerArrow"
+                        >
+                            ▾
+                        </span>
+
+                    </button>
+
+
+
+                    <div
+                        class="customer-dropdown"
+                        id="customerDropdown"
+                    >
+
+
+                        <div class="customer-dropdown-head">
+
+                            <span class="customer-dropdown-label">
+                                MY VELOURA
+                            </span>
+
+                            <strong id="customerDropdownName">
+                                Guest
+                            </strong>
+
+                            <small id="customerDropdownEmail">
+                                Welcome to Veloura
+                            </small>
+
+                        </div>
+
+
+                        <a
+                            href="order-history.html"
+                            class="customer-dropdown-link"
+                        >
+
+                            <span>
+                                ORDER HISTORY
+                            </span>
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+
+                        <a
+                            href="reservation-history.html"
+                            class="customer-dropdown-link"
+                        >
+
+                            <span>
+                                RESERVATION HISTORY
+                            </span>
+
+                            <span>
+                                →
+                            </span>
+
+                        </a>
+
+
+                        <button
+                            type="button"
+                            class="customer-signout"
+                            id="customerSignOut"
+                        >
+
+                            <span>
+                                SIGN OUT
+                            </span>
+
+                            <span>
+                                →
+                            </span>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <button
+                    class="staff-button"
+                    type="button"
+                >
+
+                    <span class="shield-icon">
+                        ◇
+                    </span>
+
+                    Staff Portal
+
+                </button>
+
+
+
+                <a
+                    href="menu.html"
+                    class="bag-button"
+                    aria-label="Shopping bag"
+                >
+
+                    <span>
+                        ♧
+                    </span>
+
+                    <i></i>
+
+                </a>
+
+
+            </div>
+
+
+        </nav>
+
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="reservation-hero">
+
+
+            <div class="hero-grid"></div>
+
+            <div class="hero-light hero-light-one"></div>
+
+            <div class="hero-light hero-light-two"></div>
+
+            <div class="hero-orbit orbit-one"></div>
+
+            <div class="hero-orbit orbit-two"></div>
+
+
+
+            <div class="reservation-shell">
+
+
+                <!-- LEFT -->
+
+                <div class="reservation-copy">
+
+
+                    <div class="page-kicker reveal">
+
+                        <span></span>
+
+                        RESERVATIONS
+
+                    </div>
+
+
+                    <h1 class="reveal">
+
+                        Your table,
+                        <br>
+                        your moment.
+
+                    </h1>
+
+
+                    <p class="hero-description reveal">
+
+                        Reserve your table at Veloura and enjoy
+                        thoughtful coffee, beautifully prepared food
+                        and a warm, refined atmosphere in Al Ain.
+
+                    </p>
+
+
+
+                    <div class="reservation-details reveal">
+
+
+                        <div>
+
+                            <span>
+                                01
+                            </span>
+
+                            <h3>
+                                Location
+                            </h3>
+
+                            <p>
+                                Al Ain · UAE
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                02
+                            </span>
+
+                            <h3>
+                                Opening Hours
+                            </h3>
+
+                            <p>
+                                Daily · 7:00 AM – 11:00 PM
+                            </p>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                03
+                            </span>
+
+                            <h3>
+                                Reservations
+                            </h3>
+
+                            <p>
+                                Advance booking recommended
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- BOOKING CARD -->
+
+                <div
+                    class="booking-card reveal"
+                    id="bookingCard"
+                >
+
+
+                    <div class="booking-glow"></div>
+
+                    <div class="booking-shine"></div>
+
+
+                    <div class="booking-top">
+
+
+                        <div>
+
+                            <p class="booking-kicker">
+                                RESERVE YOUR TABLE
+                            </p>
+
+                            <h2>
+                                Book a moment
+                                <br>
+                                at Veloura.
+                            </h2>
+
+                        </div>
+
+
+                        <div class="booking-logo">
+                            V
+                        </div>
+
+
+                    </div>
+
+
+
+                    <form
+                        class="reservation-form"
+                        id="reservationForm"
+                        novalidate
+                    >
+
+
+                        <!-- NAME -->
+
+                        <div class="form-group full-width">
+
+                            <label for="name">
+                                FULL NAME
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your name"
+                                required
+                            >
+
+                            <span class="form-line"></span>
+
+                            <small class="error-message"></small>
+
+                        </div>
+
+
+
+                        <!-- PHONE -->
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                PHONE
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="+971"
+                                required
+                            >
+
+                            <span class="form-line"></span>
+
+                            <small class="error-message"></small>
+
+                        </div>
+
+
+
+                        <!-- EMAIL -->
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                EMAIL
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@email.com"
+                                required
+                            >
+
+                            <span class="form-line"></span>
+
+                            <small class="error-message"></small>
+
+                        </div>
+
+
+
+                        <!-- DATE -->
+
+                        <div class="form-group">
+
+                            <label for="date">
+                                DATE
+                            </label>
+
+                            <input
+                                type="date"
+                                id="date"
+                                name="date"
+                                required
+                            >
+
+                            <span class="form-line"></span>
+
+                            <small class="error-message"></small>
+
+                        </div>
+
+
+
+                        <!-- TIME -->
+
+                        <div class="form-group">
+
+                            <label for="time">
+                                TIME
+                            </label>
+
+                            <select
+                                id="time"
+                                name="time"
+                                required
+                            >
+
+                                <option value="">
+                                    Select time
+                                </option>
+
+                                <option value="08:00">
+                                    8:00 AM
+                                </option>
+
+                                <option value="09:00">
+                                    9:00 AM
+                                </option>
+
+                                <option value="10:00">
+                                    10:00 AM
+                                </option>
+
+                                <option value="11:00">
+                                    11:00 AM
+                                </option>
+
+                                <option value="12:00">
+                                    12:00 PM
+                                </option>
+
+                                <option value="13:00">
+                                    1:00 PM
+                                </option>
+
+                                <option value="14:00">
+                                    2:00 PM
+                                </option>
+
+                                <option value="15:00">
+                                    3:00 PM
+                                </option>
+
+                                <option value="16:00">
+                                    4:00 PM
+                                </option>
+
+                                <option value="17:00">
+                                    5:00 PM
+                                </option>
+
+                                <option value="18:00">
+                                    6:00 PM
+                                </option>
+
+                                <option value="19:00">
+                                    7:00 PM
+                                </option>
+
+                                <option value="20:00">
+                                    8:00 PM
+                                </option>
+
+                                <option value="21:00">
+                                    9:00 PM
+                                </option>
+
+                                <option value="22:00">
+                                    10:00 PM
+                                </option>
+
+                            </select>
+
+                            <span class="form-line"></span>
+
+                            <small class="error-message"></small>
+
+                        </div>
+
+
+
+                        <!-- GUESTS -->
+
+                        <div class="form-group full-width">
+
+                            <label>
+                                NUMBER OF GUESTS
+                            </label>
+
+
+                            <div class="guest-selector">
+
+
+                                <button
+                                    type="button"
+                                    class="guest-button"
+                                    id="guestMinus"
+                                >
+                                    −
+                                </button>
+
+
+                                <div class="guest-count">
+
+                                    <span id="guestCount">
+                                        2
+                                    </span>
+
+                                    <small>
+                                        GUESTS
+                                    </small>
+
+                                </div>
+
+
+                                <button
+                                    type="button"
+                                    class="guest-button"
+                                    id="guestPlus"
+                                >
+                                    +
+                                </button>
+
+
+                            </div>
+
+
+                            <input
+                                type="hidden"
+                                id="guests"
+                                name="guests"
+                                value="2"
+                            >
+
+
+                        </div>
+
+
+
+                        <!-- SPECIAL REQUEST -->
+
+                        <div class="form-group full-width">
+
+                            <label for="message">
+                                SPECIAL REQUEST
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="3"
+                                placeholder="Birthday, preferred seating, allergies or anything else..."
+                            ></textarea>
+
+                            <span class="form-line"></span>
+
+                        </div>
+
+
+
+                        <!-- SUBMIT -->
+
+                        <button
+                            type="submit"
+                            class="submit-button"
+                        >
+
+                            <span>
+                                CONFIRM RESERVATION
+                            </span>
+
+                            <span class="submit-icon">
+                                →
+                            </span>
+
+                        </button>
+
+
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             EXPERIENCE STRIP
+        ================================================== -->
+
+        <section class="reservation-strip">
+
+
+            <div class="strip-shell">
+
+
+                <div class="strip-item reveal">
+
+                    <span>
+                        01
+                    </span>
+
+                    <h3>
+                        Thoughtful Seating
+                    </h3>
+
+                    <p>
+                        Comfortable spaces for quiet coffee
+                        or meaningful conversation.
+                    </p>
+
+                </div>
+
+
+                <div class="strip-item reveal">
+
+                    <span>
+                        02
+                    </span>
+
+                    <h3>
+                        Warm Atmosphere
+                    </h3>
+
+                    <p>
+                        Refined lighting and elegant interiors
+                        designed around comfort.
+                    </p>
+
+                </div>
+
+
+                <div class="strip-item reveal">
+
+                    <span>
+                        03
+                    </span>
+
+                    <h3>
+                        Made for Moments
+                    </h3>
+
+                    <p>
+                        From morning coffee to evening desserts,
+                        every visit is worth enjoying.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             FINAL CTA
+        ================================================== -->
+
+        <section class="reservation-cta">
+
+
+            <div class="cta-glow"></div>
+
+            <div class="cta-ring cta-ring-one"></div>
+
+            <div class="cta-ring cta-ring-two"></div>
+
+
+            <div class="cta-content reveal">
+
+
+                <p class="page-kicker center-kicker">
+                    VELOURA · AL AIN
+                </p>
+
+
+                <h2>
+                    A table is waiting.
+                </h2>
+
+
+                <p>
+                    We look forward to welcoming you.
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         CONFIRMATION MODAL
+    ====================================================== -->
+
+    <div
+        class="confirmation-modal"
+        id="confirmationModal"
+    >
+
+
+        <div class="confirmation-card">
+
+
+            <div class="confirmation-icon">
+                ✓
+            </div>
+
+
+            <p class="confirmation-kicker">
+                RESERVATION REQUEST RECEIVED
+            </p>
+
+
+            <h2>
+                See you at
+                <br>
+                Veloura.
+            </h2>
+
+
+            <p
+                class="confirmation-text"
+                id="confirmationText"
+            >
+                Your reservation details have been received.
+            </p>
+
+
+            <button
+                type="button"
+                id="closeConfirmation"
+            >
+
+                CONTINUE
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="reservation-footer">
+
+
+        <div class="footer-main">
+
+
+            <div>
+
+                <h2>
+                    VELOURA
+                </h2>
+
+                <p>
+                    WHERE EVERY CUP TELLS A STORY
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="story.html">
+                    Story
+                </a>
+
+                <a href="gallery.html">
+                    Gallery
+                </a>
+
+                <a href="reservation.html">
+                    Reservation
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                AL AIN · UAE
+            </span>
+
+            <span>
+                © 2026 VELOURA CAFE
+            </span>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         CUSTOMER ACCOUNT MODAL
+    ====================================================== -->
+
+    <div
+        class="customer-auth-modal"
+        id="customerAuthModal"
+        aria-hidden="true"
+    >
+
+
+        <div
+            class="customer-auth-backdrop"
+            id="customerAuthBackdrop"
+        ></div>
+
+
+        <div
+            class="customer-auth-card"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="customerAuthTitle"
+        >
+
+
+            <button
+                type="button"
+                class="customer-auth-close"
+                id="customerAuthClose"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+
+            <div class="customer-auth-logo">
+                <span>V</span>
+            </div>
+
+
+            <p class="customer-auth-eyebrow">
+                WELCOME TO VELOURA
+            </p>
+
+
+            <h2 id="customerAuthTitle">
+                Your Veloura
+            </h2>
+
+
+            <div class="customer-auth-tabs">
+
+
+                <button
+                    type="button"
+                    class="customer-auth-tab active"
+                    id="customerSignupTab"
+                >
+                    SIGN UP
+                </button>
+
+
+                <button
+                    type="button"
+                    class="customer-auth-tab"
+                    id="customerSigninTab"
+                >
+                    SIGN IN
+                </button>
+
+
+            </div>
+
+
+
+            <!-- SIGN UP -->
+
+            <form
+                class="customer-auth-form active"
+                id="customerSignupForm"
+            >
+
+
+                <div class="customer-auth-field">
+
+                    <label for="customerSignupName">
+                        YOUR NAME
+                    </label>
+
+                    <input
+                        type="text"
+                        id="customerSignupName"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                    >
+
+                </div>
+
+
+                <div class="customer-auth-field">
+
+                    <label for="customerSignupEmail">
+                        EMAIL ADDRESS
+                    </label>
+
+                    <input
+                        type="email"
+                        id="customerSignupEmail"
+                        placeholder="name@email.com"
+                        autocomplete="email"
+                    >
+
+                </div>
+
+
+                <div class="customer-auth-field">
+
+                    <label for="customerSignupPhone">
+                        PHONE NUMBER
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="customerSignupPhone"
+                        placeholder="+971 50 000 0000"
+                        autocomplete="tel"
+                    >
+
+                </div>
+
+
+                <div class="customer-auth-field">
+
+                    <label for="customerSignupPassword">
+                        PASSWORD
+                    </label>
+
+                    <input
+                        type="password"
+                        id="customerSignupPassword"
+                        placeholder="Minimum 6 characters"
+                        autocomplete="new-password"
+                    >
+
+                </div>
+
+
+                <p
+                    class="customer-auth-error"
+                    id="customerSignupError"
+                ></p>
+
+
+                <button
+                    type="submit"
+                    class="customer-auth-submit"
+                >
+                    CREATE MY VELOURA ACCOUNT
+                </button>
+
+
+            </form>
+
+
+
+            <!-- SIGN IN -->
+
+            <form
+                class="customer-auth-form"
+                id="customerSigninForm"
+            >
+
+
+                <div class="customer-auth-field">
+
+                    <label for="customerSigninEmail">
+                        EMAIL ADDRESS
+                    </label>
+
+                    <input
+                        type="email"
+                        id="customerSigninEmail"
+                        placeholder="name@email.com"
+                        autocomplete="email"
+                    >
+
+                </div>
+
+
+                <div class="customer-auth-field">
+
+                    <label for="customerSigninPassword">
+                        PASSWORD
+                    </label>
+
+                    <input
+                        type="password"
+                        id="customerSigninPassword"
+                        placeholder="Your password"
+                        autocomplete="current-password"
+                    >
+
+                </div>
+
+
+                <p
+                    class="customer-auth-error"
+                    id="customerSigninError"
+                ></p>
+
+
+                <button
+                    type="submit"
+                    class="customer-auth-submit"
+                >
+                    SIGN IN TO VELOURA
+                </button>
+
+
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="js/reservation.js"></script>
+
+
+</body>
+
+</html>

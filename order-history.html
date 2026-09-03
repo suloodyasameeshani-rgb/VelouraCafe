@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="View your Veloura Cafe order history."
+    >
+
+    <title>Veloura Cafe | Order History</title>
+
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <link
+        rel="stylesheet"
+        href="css/order-history.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header
+        class="history-header"
+        id="historyHeader"
+    >
+
+        <nav class="navbar">
+
+
+            <a
+                href="index.html"
+                class="brand-area"
+            >
+
+                <div class="brand-diamond">
+
+                    <span>
+                        V
+                    </span>
+
+                </div>
+
+
+                <div class="brand-copy">
+
+                    <div class="brand-name">
+                        VELOURA
+                    </div>
+
+                    <div class="brand-subtitle">
+                        CAFÉ · AL AIN
+                    </div>
+
+                </div>
+
+            </a>
+
+
+
+            <div class="nav-links">
+
+
+                <a href="index.html">
+
+                    <span class="nav-dot"></span>
+
+                    HOME
+
+                </a>
+
+
+                <a href="story.html">
+
+                    <span class="nav-dot"></span>
+
+                    STORY
+
+                </a>
+
+
+                <a href="gallery.html">
+
+                    <span class="nav-dot"></span>
+
+                    GALLERY
+
+                </a>
+
+
+                <a href="reservation.html">
+
+                    <span class="nav-dot"></span>
+
+                    RESERVATION
+
+                </a>
+
+
+                <a href="menu.html">
+
+                    <span class="nav-dot"></span>
+
+                    MENU
+
+                </a>
+
+
+            </div>
+
+
+
+            <div class="nav-actions">
+
+
+                <a
+                    href="reservation.html"
+                    class="reserve-button"
+                >
+
+                    <span class="reserve-dot"></span>
+
+                    RESERVE
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <button
+                    type="button"
+                    class="account-button"
+                    id="accountButton"
+                >
+                    MY ACCOUNT
+                </button>
+
+
+                <a
+                    href="menu.html"
+                    class="bag-button"
+                    aria-label="Go to menu"
+                >
+
+                    <span class="bag-symbol">
+                        ♧
+                    </span>
+
+                </a>
+
+
+            </div>
+
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="history-hero">
+
+
+            <div class="hero-grid"></div>
+
+            <div class="hero-glow hero-glow-one"></div>
+
+            <div class="hero-glow hero-glow-two"></div>
+
+            <div class="hero-orbit hero-orbit-one"></div>
+
+            <div class="hero-orbit hero-orbit-two"></div>
+
+
+            <div class="history-shell hero-content">
+
+
+                <p class="hero-kicker reveal">
+                    VELOURA MEMBERS
+                </p>
+
+
+                <h1 class="reveal">
+
+                    Your Order
+                    <br>
+                    History
+
+                </h1>
+
+
+                <p class="hero-description reveal">
+
+                    Revisit your favourite Veloura moments,
+                    view previous purchases and order them again.
+
+                </p>
+
+
+                <a
+                    href="menu.html"
+                    class="hero-menu-button reveal"
+                >
+
+                    <span>
+                        EXPLORE MENU
+                    </span>
+
+                    <span class="hero-button-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             ACCOUNT SUMMARY
+        ================================================== -->
+
+        <section class="account-summary-section">
+
+
+            <div class="history-shell">
+
+
+                <div class="account-summary reveal">
+
+
+                    <div class="customer-card">
+
+
+                        <div class="customer-avatar">
+
+                            <span id="customerInitial">
+                                V
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <p>
+                                WELCOME BACK
+                            </p>
+
+                            <h2 id="customerName">
+                                Veloura Guest
+                            </h2>
+
+                            <span id="customerEmail">
+                                Sign in to view your orders
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="summary-stats">
+
+
+                        <div class="summary-stat">
+
+                            <span>
+                                TOTAL ORDERS
+                            </span>
+
+                            <strong id="totalOrders">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="summary-stat">
+
+                            <span>
+                                TOTAL SPENT
+                            </span>
+
+                            <strong>
+
+                                <span id="totalSpent">
+                                    0
+                                </span>
+
+                                <small>
+                                    AED
+                                </small>
+
+                            </strong>
+
+                        </div>
+
+
+                        <div class="summary-stat">
+
+                            <span>
+                                LAST ORDER
+                            </span>
+
+                            <strong
+                                class="last-order-date"
+                                id="lastOrderDate"
+                            >
+                                —
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             ORDER HISTORY
+        ================================================== -->
+
+        <section class="history-section">
+
+
+            <div class="history-shell">
+
+
+                <div class="history-heading reveal">
+
+
+                    <div>
+
+                        <p>
+                            PREVIOUS ORDERS
+                        </p>
+
+                        <h2>
+                            Your Veloura Moments
+                        </h2>
+
+                    </div>
+
+
+                    <div class="history-controls">
+
+
+                        <div class="history-search">
+
+                            <span>
+                                ⌕
+                            </span>
+
+                            <input
+                                type="text"
+                                id="historySearch"
+                                placeholder="Search order..."
+                            >
+
+                        </div>
+
+
+                        <select id="historyFilter">
+
+                            <option value="all">
+                                All Orders
+                            </option>
+
+                            <option value="pickup">
+                                Pickup
+                            </option>
+
+                            <option value="delivery">
+                                Delivery
+                            </option>
+
+                        </select>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ORDER LIST -->
+
+                <div
+                    class="orders-list"
+                    id="ordersList"
+                ></div>
+
+
+
+                <!-- NO SEARCH RESULTS -->
+
+                <div
+                    class="no-search-results"
+                    id="noSearchResults"
+                >
+
+                    <div class="empty-symbol">
+                        ⌕
+                    </div>
+
+                    <h3>
+                        No matching orders.
+                    </h3>
+
+                    <p>
+                        Try another order number or filter.
+                    </p>
+
+                </div>
+
+
+
+                <!-- EMPTY HISTORY -->
+
+                <div
+                    class="empty-history"
+                    id="emptyHistory"
+                >
+
+
+                    <div class="empty-history-logo">
+
+                        <span>
+                            V
+                        </span>
+
+                    </div>
+
+
+                    <p class="empty-kicker">
+                        YOUR FIRST VELOURA MOMENT AWAITS
+                    </p>
+
+
+                    <h2>
+                        No orders yet.
+                    </h2>
+
+
+                    <p class="empty-description">
+
+                        When you place your first Veloura order,
+                        it will appear here for you to revisit anytime.
+
+                    </p>
+
+
+                    <a
+                        href="menu.html"
+                        class="empty-menu-button"
+                    >
+
+                        <span>
+                            EXPLORE THE MENU
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         ORDER DETAIL MODAL
+    ====================================================== -->
+
+    <div
+        class="order-modal"
+        id="orderModal"
+    >
+
+
+        <div
+            class="order-modal-backdrop"
+            id="orderModalBackdrop"
+        ></div>
+
+
+        <div class="order-detail-card">
+
+
+            <button
+                type="button"
+                class="order-modal-close"
+                id="orderModalClose"
+            >
+                ×
+            </button>
+
+
+
+            <div class="receipt-header">
+
+
+                <div class="receipt-logo">
+                    V
+                </div>
+
+
+                <div>
+
+                    <p>
+                        VELOURA RECEIPT
+                    </p>
+
+                    <h2 id="detailOrderNumber">
+                        VL-2026-0000
+                    </h2>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="receipt-meta">
+
+
+                <div>
+
+                    <span>
+                        DATE
+                    </span>
+
+                    <strong id="detailOrderDate">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        ORDER TYPE
+                    </span>
+
+                    <strong id="detailOrderType">
+                        Pickup
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        PAYMENT
+                    </span>
+
+                    <strong id="detailPayment">
+                        Card
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        STATUS
+                    </span>
+
+                    <strong
+                        class="detail-status"
+                        id="detailStatus"
+                    >
+                        Confirmed
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- LOCATION -->
+
+            <div
+                class="receipt-location"
+                id="receiptLocation"
+            >
+
+
+                <div class="receipt-location-icon">
+                    ⌖
+                </div>
+
+
+                <div>
+
+                    <span>
+                        DELIVERY LOCATION
+                    </span>
+
+                    <strong id="detailLocationName">
+                        Home
+                    </strong>
+
+                    <p id="detailLocationAddress">
+                        Al Ain
+                    </p>
+
+                    <p id="detailLocationPhone"></p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ORDER ITEMS -->
+
+            <div class="receipt-items-heading">
+
+                <span>
+                    YOUR ITEMS
+                </span>
+
+                <strong id="detailItemCount">
+                    0 ITEMS
+                </strong>
+
+            </div>
+
+
+            <div
+                class="receipt-items"
+                id="receiptItems"
+            ></div>
+
+
+
+            <!-- TOTALS -->
+
+            <div class="receipt-totals">
+
+
+                <div>
+
+                    <span>
+                        SUBTOTAL
+                    </span>
+
+                    <strong>
+
+                        <span id="detailSubtotal">
+                            0
+                        </span>
+
+                        AED
+
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        DELIVERY
+                    </span>
+
+                    <strong id="detailDeliveryFee">
+                        FREE
+                    </strong>
+
+                </div>
+
+
+                <div class="receipt-grand-total">
+
+                    <span>
+                        TOTAL
+                    </span>
+
+                    <strong>
+
+                        <span id="detailTotal">
+                            0
+                        </span>
+
+                        AED
+
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="receipt-actions">
+
+
+                <button
+                    type="button"
+                    class="order-again-main"
+                    id="detailOrderAgain"
+                >
+
+                    <span>
+                        ORDER AGAIN
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="close-receipt-button"
+                    id="closeReceiptButton"
+                >
+                    CLOSE
+                </button>
+
+
+            </div>
+
+
+
+            <div class="receipt-footer">
+
+                <span>
+                    VELOURA CAFÉ · AL AIN
+                </span>
+
+                <span>
+                    WHERE EVERY CUP TELLS A STORY
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         ORDER AGAIN CONFIRMATION
+    ====================================================== -->
+
+    <div
+        class="reorder-modal"
+        id="reorderModal"
+    >
+
+
+        <div
+            class="reorder-backdrop"
+            id="reorderBackdrop"
+        ></div>
+
+
+        <div class="reorder-card">
+
+
+            <div class="reorder-icon">
+                ↻
+            </div>
+
+
+            <p class="reorder-kicker">
+                ORDER AGAIN
+            </p>
+
+
+            <h2>
+                Add these items
+                <br>
+                to your bag?
+            </h2>
+
+
+            <p class="reorder-description">
+
+                The items from this previous order
+                will be added to your current Veloura bag.
+
+            </p>
+
+
+            <div class="reorder-order-number">
+
+                <span>
+                    PREVIOUS ORDER
+                </span>
+
+                <strong id="reorderOrderNumber">
+                    VL-2026-0000
+                </strong>
+
+            </div>
+
+
+            <div class="reorder-actions">
+
+
+                <button
+                    type="button"
+                    id="cancelReorder"
+                >
+                    CANCEL
+                </button>
+
+
+                <button
+                    type="button"
+                    id="confirmReorder"
+                >
+
+                    ADD TO BAG
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         TOAST
+    ====================================================== -->
+
+    <div
+        class="history-toast"
+        id="historyToast"
+    >
+
+
+        <div class="toast-check">
+            ✓
+        </div>
+
+
+        <div>
+
+            <strong id="toastTitle">
+                Added to bag
+            </strong>
+
+            <span id="toastMessage">
+                Your previous order is ready.
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="history-footer">
+
+
+        <div class="footer-main">
+
+
+            <div>
+
+                <h2>
+                    VELOURA
+                </h2>
+
+                <p>
+                    WHERE EVERY CUP TELLS A STORY
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="story.html">
+                    Story
+                </a>
+
+                <a href="gallery.html">
+                    Gallery
+                </a>
+
+                <a href="reservation.html">
+                    Reservation
+                </a>
+
+                <a href="menu.html">
+                    Menu
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                AL AIN · UAE
+            </span>
+
+            <span>
+                © 2026 VELOURA CAFE
+            </span>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <script src="js/order-history.js"></script>
+
+
+</body>
+
+</html>
