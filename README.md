@@ -1,82 +1,158 @@
-🚀 Project 2 Completed — VelouraCafe Premium Café Website
+# ☕ VelouraCafe
 
-I’m excited to share my second completed project, VelouraCafe — a modern, responsive, and interactive café website ☕✨
+VelouraCafe is a modern, responsive, and interactive café website created as a front-end web development project.
 
-For this project, I designed and developed a complete café website focused on creating a premium and engaging digital experience for customers.
+The website combines a premium dark-themed design with an interactive customer experience, including café browsing, online ordering, reservations, customer accounts, and history pages.
 
-✨ Key Features:
-• Cinematic Welcome and Introduction experience
-• Luxury dark-themed café UI
-• Responsive design for desktop, tablet, and mobile
-• Interactive café menu with categories and search
-• Shopping cart and ordering system
-• Pickup and delivery options
-• Table reservation system
-• Customer Sign Up and Sign In
-• Order History and Reservation History
-• Café Story and Gallery sections
-• Smooth animations and interactive effects
-• User-friendly navigation
+## 🌐 Live Website
 
-🛠️ Technologies Used:
-• HTML5
-• CSS3
-• JavaScript
-• Git & GitHub
-• GitHub Pages for deployment
-
-🗺️ Project Development Roadmap:
-
-1️⃣ Planning & Design
-→ Planned the café concept, pages, and customer journey
-→ Created the VelouraCafe brand style
-→ Designed a premium dark-themed UI/UX
-
-2️⃣ Front-End Development
-→ Built the website structure using HTML5
-→ Created responsive layouts using CSS3
-→ Added animations and interactions using JavaScript
-
-3️⃣ Feature Development
-→ Developed the interactive menu and product search
-→ Created the shopping cart and checkout experience
-→ Added pickup and delivery options
-→ Built customer Sign Up and Sign In
-→ Developed the table reservation system
-→ Added Order History and Reservation History
-→ Created Café Story and Gallery pages
-
-4️⃣ Testing & Improvements
-→ Tested navigation between pages
-→ Improved responsive layouts
-→ Tested forms, ordering, reservations, and customer interactions
-→ Fixed navigation and user-flow issues
-
-5️⃣ Git & GitHub
-→ Created a local Git repository
-→ Added and committed the complete project
-→ Created the GitHub repository
-→ Pushed the project to GitHub
-→ Used Git for version control and project updates
-
-6️⃣ Deployment 🚀
-→ Configured GitHub Pages
-→ Deployed the website from the main branch
-→ Tested the live website and navigation
-→ Completed the full Welcome → Introduction → Home → Café Experience flow
-
-💡 What I Learned:
-
-Working on VelouraCafe helped me improve my practical skills in front-end web development, responsive design, JavaScript interactions, local storage, form validation, UI/UX design, Git/GitHub, project organization, and website deployment.
-
-This project also gave me valuable experience in turning an idea into a complete multi-page website while focusing on both functionality and user experience.
-
-A big thank you to Sqrock IT Solutions for providing this project opportunity and helping me gain practical development experience. 🙌
-
-💻 Live Website:
 https://suloodyasameeshani-rgb.github.io/VelouraCafe/
 
-💻 GitHub Repository:
-https://github.com/suloodyasameeshani-rgb/VelouraCafe
+---
 
-#WebDevelopment #HTML #CSS #JavaScript #GitHub #GitHubPages #FrontendDevelopment #WebDesign #ResponsiveDesign #UIUX #StudentDeveloper #Internship #SqrockITSolutions #VelouraCafe #CafeWebsite
+## ✨ Features
+
+- 🎬 Cinematic Welcome Page
+- ✨ Animated Introduction Page
+- 🏠 Modern Café Homepage
+- 📖 Café Story Page
+- 🖼️ Interactive Gallery
+- ☕ Interactive Menu
+- 🔍 Menu Search and Category Filters
+- 🛒 Shopping Cart
+- 📦 Pickup and Delivery Options
+- 💳 Demo Checkout System
+- 📅 Table Reservation System
+- 👤 Customer Sign Up and Sign In
+- 🧾 Order History
+- 📆 Reservation History
+- 📱 Responsive Desktop, Tablet and Mobile Design
+- ✨ Smooth Animations and Interactive Effects
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- LocalStorage
+- Git
+- GitHub
+- GitHub Pages
+
+---
+
+## 🗺️ Project Roadmap
+
+### Phase 1 — Planning & Design
+- [x] Plan café concept and website structure
+- [x] Create VelouraCafe branding
+- [x] Design premium dark-themed UI
+- [x] Plan website navigation and customer journey
+
+### Phase 2 — Core Website
+- [x] Welcome page
+- [x] Introduction page
+- [x] Homepage
+- [x] Story page
+- [x] Gallery page
+- [x] Reservation page
+- [x] Menu page
+
+### Phase 3 — Customer Features
+- [x] Sign Up
+- [x] Sign In
+- [x] Customer account
+- [x] Shopping cart
+- [x] Pickup ordering
+- [x] Delivery ordering
+- [x] Table reservations
+- [x] Order history
+- [x] Reservation history
+
+### Phase 4 — UI & Interactions
+- [x] Responsive layouts
+- [x] Smooth animations
+- [x] Interactive menu
+- [x] Product popups
+- [x] Form validation
+- [x] LocalStorage integration
+- [x] Mobile-friendly design
+
+### Phase 5 — Testing
+- [x] Test page navigation
+- [x] Test ordering flow
+- [x] Test reservation flow
+- [x] Test customer login
+- [x] Test responsive layouts
+- [x] Fix navigation issues
+
+### Phase 6 — GitHub & Deployment
+- [x] Initialize Git repository
+- [x] Create GitHub repository
+- [x] Commit project files
+- [x] Push project to GitHub
+- [x] Configure GitHub Pages
+- [x] Deploy live website
+- [x] Test live deployment
+
+---
+
+## 🔄 Website Flow
+
+Welcome Page  
+↓  
+Introduction Page  
+↓  
+Home Page  
+↓  
+Story / Gallery / Reservation / Menu  
+↓  
+Customer Ordering & Reservation Experience
+
+---
+
+## 📚 What I Learned
+
+Through this project, I improved my skills in:
+
+- Front-end web development
+- Responsive web design
+- HTML, CSS and JavaScript
+- JavaScript DOM manipulation
+- LocalStorage
+- Form validation
+- UI/UX design
+- Git version control
+- GitHub repository management
+- GitHub Pages deployment
+- Building and organizing a multi-page website
+
+---
+
+## 🚀 Future Improvements
+
+- [ ] Connect the website to a real backend
+- [ ] Add a database
+- [ ] Implement secure user authentication
+- [ ] Integrate real online payments
+- [ ] Add real-time reservation availability
+- [ ] Add an admin/staff dashboard
+- [ ] Add order tracking
+- [ ] Improve accessibility
+- [ ] Continue performance optimization
+
+---
+
+## 👩‍💻 Developer
+
+Developed as part of my practical web development learning and internship experience with **Sqrock IT Solutions**.
+
+---
+
+## 📌 Project Status
+
+✅ **Completed and Deployed**
+
+© 2026 VelouraCafe
